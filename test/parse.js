@@ -10,8 +10,8 @@ setImmediate(async () => {
         const parsed = await parser(file, {
             top: 1,
             left: 1,
-            width: 1,
-            height: 2,
+            width: 100,
+            height: 100,
         })
 
         const x = parsed.toHex()
