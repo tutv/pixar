@@ -4,7 +4,6 @@ const {parse} = require('../src/index')
 
 setImmediate(async () => {
     const file = path.join(__dirname, 'test.png')
-    const start = Date.now()
 
     try {
         const parsed = await parse(file, {
@@ -18,9 +17,6 @@ setImmediate(async () => {
         const rgba = parsed.toRGBA()
         console.log('Hex:', x)
         console.log('RGA:', rgba)
-
-        const finish = Date.now() - start
-        console.log('Time:', finish)
     } catch (error) {
         console.log("ERROR", error)
     }
