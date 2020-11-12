@@ -55,7 +55,6 @@ module.exports = (result, location = null) => {
             const index = y * width + x
             const color = Object.assign({}, colors[index])
 
-            console.log('X', x, y)
             croppedColors.push(color)
         }
     }
