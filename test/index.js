@@ -3,14 +3,14 @@ const {parse} = require('../src/index')
 
 
 setImmediate(async () => {
-    const file = path.join(__dirname, 'test.png')
+    const file = path.join(__dirname, 'template.png')
 
     try {
         const parsed = await parse(file, {
-            top: 1,
-            left: 1,
-            width: 100,
-            height: 100,
+            top: 5,
+            left: 235,
+            width: 20,
+            height: 20,
         })
 
         const x = parsed.toHex()

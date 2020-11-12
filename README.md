@@ -10,6 +10,9 @@ yarn add pixar
 ```
 
 ## Usage
+
+### 1. Pick color from image
+
 ```js
 const path = require('path')
 const {parse} = require('pixar')
@@ -34,4 +37,20 @@ setImmediate(async () => {
         console.log("ERROR", error)
     }
 })
+```
+
+### 2. Get similar color
+```js
+
+const {getSimilarColor} = require('pixar')
+
+
+setImmediate(async () => {
+    const color = '#0a8455'
+    const colors = ['#10a068', '#2053a2', '#f2ced8', '#ffb43d', '#91b8e1']
+    const similar = getSimilarColor(color, colors)
+    console.log(similar)
+})
+
+
 ```

@@ -1,4 +1,4 @@
-type FileOrBuffer = String | Buffer
+type FileOrBuffer = string | Buffer
 
 interface Location {
     top: Number,
@@ -7,7 +7,7 @@ interface Location {
     height: Number,
 }
 
-type Hex = String
+type Hex = string
 type RGBA = {
     r: Number,
     g: Number,

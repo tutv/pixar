@@ -1,3 +1,4 @@
 module.exports = {
-    parse: require('./parser/index')
+    parse: require('./parser/index'),
+    getSimilarColor: require('./libs/getSimilarColor')
 }
