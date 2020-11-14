@@ -3,12 +3,12 @@ const {parse} = require('../src/index')
 
 
 setImmediate(async () => {
-    const file = path.join(__dirname, 'template.png')
+    const file = path.join(__dirname, 'test.png')
 
     try {
         const parsed = await parse(file, {
-            top: 5,
-            left: 235,
+            top: 1,
+            left: 1,
             width: 20,
             height: 20,
         })

@@ -4,7 +4,7 @@ const _getPopular = require('../src/core/_getPopular')
 
 
 setImmediate(async () => {
-    const file = path.join(__dirname, 'test.png')
+    const file = path.join(__dirname, 'test.jpg')
     const start = Date.now()
 
     try {
@@ -14,7 +14,6 @@ setImmediate(async () => {
             width: 1,
             height: 2,
         })
-        console.log(colors)
         console.log(width, height)
         const color = await _getPopular(colors)
         console.log(color)
